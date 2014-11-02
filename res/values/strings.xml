@@ -1,0 +1,19 @@
+<resources>
+
+    <string name="extension_name">Battery</string>
+    <string name="application_name">Dashclock Battery Extension</string>
+    <string name="extension_info">Displays information about the device\'s remaining battery and charging state.</string>
+    <string name="battery_charging">Device is currently charging</string>
+    <string name="charged_in">The battery should be fully charged in approximately %s</string>
+    <string name="charged_checking">Calculating the amount of time until the battery is fully charged</string>
+    <string name="battery_emptying">Device is currently discharging</string>
+    <string name="emptied_in">The battery should be totally drained in approximately %s</string>
+    <string name="emptied_checking">Calculating the amount of time until the battery is totally drained</string>
+    <string name="battery_charged">Your battery is at full capacity</string>
+    <string name="battery_totally">Your battery in totally charged. You may unplug the device.</string>
+    <string name="battery_nocharg">Your battery doesn\'t seem to be charging</string>
+    <string name="battery_usingit">Your battery isn\'t charging properly. Try charging via an AC power source  to see if that resolves the issue</string>
+    <string name="battery_unknown">Your battery status could not be determined</string>
+    <string name="battery_message">Unable to check battery status. Try rebooting your device to see if that resolves the issue.</string>
+
+</resources>
