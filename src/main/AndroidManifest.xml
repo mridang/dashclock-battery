@@ -1,11 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mridang.battery"
-    android:versionCode="1"
-    android:versionName="0.1" >
-
-    <uses-sdk
-        android:minSdkVersion="14"
-        android:targetSdkVersion="14" />
+    android:sharedUserId="com.mridang.dashclock"
+    android:versionCode="2"
+    android:versionName="0.2">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -13,12 +10,13 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/application_name"
-        android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
+        android:process="com.mridang.dashclock"
+        android:theme="@style/ExtensionTheme">
         <service
             android:name="com.mridang.battery.BatteryWidget"
             android:icon="@drawable/ic_dashclock"
             android:label="@string/extension_name"
-            android:permission="com.google.android.apps.dashclock.permission.READ_EXTENSION_DATA" >
+            android:permission="com.google.android.apps.dashclock.permission.READ_EXTENSION_DATA">
             <intent-filter>
                 <action android:name="com.google.android.apps.dashclock.Extension" />
             </intent-filter>
