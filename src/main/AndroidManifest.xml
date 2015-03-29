@@ -1,6 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mridang.battery"
-    android:sharedUserId="com.mridang.dashclock"
     android:versionCode="2"
     android:versionName="0.2">
 
@@ -10,7 +9,6 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/application_name"
-        android:process="com.mridang.dashclock"
         android:theme="@style/ExtensionTheme">
         <service
             android:name="com.mridang.battery.BatteryWidget"
