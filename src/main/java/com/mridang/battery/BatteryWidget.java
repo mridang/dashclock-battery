@@ -1,11 +1,5 @@
 package com.mridang.battery;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
-import org.ocpsoft.prettytime.PrettyTime;
-
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -14,6 +8,12 @@ import android.os.BatteryManager;
 import android.util.Log;
 
 import com.google.android.apps.dashclock.api.ExtensionData;
+
+import org.ocpsoft.prettytime.PrettyTime;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 /*
  * This class is the main class that provides the widget
@@ -97,7 +97,7 @@ public class BatteryWidget extends ImprovedExtension {
 				lngAverage = lngAverage / lngCharges.size();
 
 				if (lngCharges.size() > getInt("charge_points", 0)) {
-					Editor ediEditor = speSettings.edit();
+					Editor ediEditor = getSettings().edit();
 					ediEditor.putLong("delta_charge", lngAverage);
 					ediEditor.putInt("charge_points", lngCharges.size());
 					ediEditor.apply();
@@ -139,7 +139,7 @@ public class BatteryWidget extends ImprovedExtension {
 				lngAverage = lngAverage / lngDischarges.size();
 
 				if (lngDischarges.size() > getInt("discharge_points", 0)) {
-					Editor ediEditor = speSettings.edit();
+					Editor ediEditor = getSettings().edit();
 					ediEditor.putLong("delta_discharge", lngAverage);
 					ediEditor.putInt("discharge_points", lngDischarges.size());
 					ediEditor.apply();
