@@ -1,9 +1,9 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mridang.battery"
-    android:versionCode="2"
-    android:versionName="0.2">
+<manifest package="com.mridang.battery"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:versionCode="3"
+          android:versionName="0.3">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -16,18 +16,18 @@
             android:label="@string/extension_name"
             android:permission="com.google.android.apps.dashclock.permission.READ_EXTENSION_DATA">
             <intent-filter>
-                <action android:name="com.google.android.apps.dashclock.Extension" />
+                <action android:name="com.google.android.apps.dashclock.Extension"/>
             </intent-filter>
 
             <meta-data
                 android:name="protocolVersion"
-                android:value="2" />
+                android:value="2"/>
             <meta-data
                 android:name="worldReadable"
-                android:value="true" />
+                android:value="true"/>
             <meta-data
                 android:name="description"
-                android:value="@string/extension_info" />
+                android:value="@string/extension_info"/>
         </service>
     </application>
 
